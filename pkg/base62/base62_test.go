@@ -1,7 +1,6 @@
 package base62
 
 import (
-	"fmt"
 	"strings"
 	"testing"
 )
@@ -25,12 +24,11 @@ func TestGenerateCode_Structure(t *testing.T) {
 
 // TestGenerateCode_Uniqueness verifica que no genere duplicados en una muestra grande
 func TestGenerateCode_Uniqueness(t *testing.T) {
-	samples := 15 // Probamos con 10 mil codigos
+	samples := 10000 // Probamos con 10 mil codigos
 	seen := make(map[string]bool)
 
 	for i := 0; i < samples; i++ {
 		code,_ := GenerateCode()
-		fmt.Println(code)
 		
 		// Si el codigo ya existe en el mapa, fallamos el test
 		if seen[code] {

@@ -24,7 +24,7 @@ Cuando alguien hace un request sobre un link la redireccion sera inmediata, mien
 
 4. Timeouts:
 - Las consultas a la db deben ser con 'context.WithTimeout' para evitar esperas y liberar recursos en unos 5 segundos por ejemplo.
-- Para verificar que la url que el usuario pida acortar exista se le hara un ping, pero con un timeout de por ejemplo 500ms.
+- Para verificar que la url que el usuario pida acortar exista se le hara un ping, con un timeout de por ejemplo 2000ms.
 
 5. Shutdown:
 Cuando el servidor deba apagarse, por el motivo que sea, debera hacerlo en los siguientes pasos:

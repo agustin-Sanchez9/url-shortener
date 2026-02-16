@@ -33,9 +33,29 @@ Cuando el servidor deba apagarse, por el motivo que sea, debera hacerlo en los s
 - Cerrar la conexion con la db
 - Apagarse.
 
-
 Otros conceptos:
 - configuracion con variables de entorno.
 - logs estructurados.
 - rate limiting por ip.
 - eliminar enlaces sin uso.
+
+Estructura de archivos actual:
+```
+/url-shortener
+├── /cmd
+│   └── main.go
+├── /internal                
+│   ├── /core               
+│   │   ├── struct.go        
+│   │   └── service.go      
+│   ├── /adapters           
+│   │   └── handler.go       
+├── /pkg                    
+│   └── /base62              
+│   │   ├── base62.go        
+│   │   └── base62_test.go
+├── /configs                
+├── go.mod                   <-- Gestor de dependencias
+└── README.md
+```
+

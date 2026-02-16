@@ -55,7 +55,7 @@ Estructura de archivos actual:
 │   │   ├── base62.go        
 │   │   └── base62_test.go
 ├── /configs                
-├── go.mod                   <-- Gestor de dependencias
+├── go.mod                   
 └── README.md
 ```
 

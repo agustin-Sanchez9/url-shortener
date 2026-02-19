@@ -12,7 +12,7 @@ const alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 // constante sobre el largo del alfabeto. Tiene que ser int64 para poder pasarselo a big.NewInt
 const lenAlphabet int64 = 62
 // constante con el largo de los codigos
-const lenCode = 5
+const lenCode = 6
 
 
 // Cuando es llamada genera un codigo en base 62 de 'lenCode' caracteres

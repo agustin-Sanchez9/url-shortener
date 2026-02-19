@@ -2,7 +2,7 @@
 
 Proyecto de practica para desarrollo de backends con Golang.
 
-La forma de acortar las url es mediante una base de datos que relacionara la url pasada por el usuario con un id de 5 caracteres en base62. Se eligio 5 caracteres dado que permiten un total de 916.132.832 combinaciones posibles en dicha base. Esta cantidad es mas que suficiente para incluso un caso real de acortadores. Si se expandiera a 6 caracteres se obtendrian 56.8B de combinaciones, lo que aseguraria nunca quedarse sin posibles id.
+La forma de acortar las url es mediante una base de datos que relacionara la url pasada por el usuario con un id de 6 caracteres en base62. Se eligio 6 caracteres dado que permiten un total de 56.800.235.584 (56.8B) combinaciones posibles en dicha base. Esta cantidad es mas que suficiente para incluso un caso real de acortadores.
 
 No se usara ningun framework de enrutamiento como son Gin, Echo o Fiber. Por fines educativos se realizara todo desde cero, a excepcion de los drivers de bases de datos.
 

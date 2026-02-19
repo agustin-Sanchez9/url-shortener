@@ -1,12 +1,13 @@
-package internal
+package core
 
 import "time"
 
 // estructura base para guardar en la db. Propenso a cambiarse en futuro
+// recordar iniciar con mayus los campos para que sean publicos y poder ser usados por el driver de DB
 type ShortedURL struct{
-	id int
+	ID int
 	code string
-	url string
-	lastVisited time.Time
-	visits int32
+	URL string
+	LastVisited time.Time
+	Visits int32
 }
